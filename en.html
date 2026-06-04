@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marius Dambu Dambu - CV English</title>
+<style>
+:root{--ink:#172033;--muted:#637083;--line:#d9e2ec;--soft:#f6f8fb;--paper:#fff;--navy:#12375a;--teal:#0f766e;--wine:#9b3157;--amber:#c37b16;--green:#12664f;--shadow:0 16px 38px rgba(18,55,90,.13)}
+*{box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+html{scroll-behavior:smooth}
+body{margin:0;background:#e8edf3;color:var(--ink);font-family:Inter,"Segoe UI",Arial,sans-serif;line-height:1.34}
+a{color:inherit}
+.sitebar{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.sitebar-inner{max-width:1120px;margin:0 auto;padding:12px 18px;display:flex;justify-content:space-between;gap:16px;align-items:center}
+.brand-small{font-weight:900;color:var(--navy);letter-spacing:.3px;text-transform:uppercase}
+.sitebar nav{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.sitebar a{font-size:13px;font-weight:800;text-decoration:none;border:1px solid var(--line);padding:7px 10px;border-radius:9px;background:#fff}
+.sitebar a:hover{border-color:var(--navy)}
+.shell{max-width:1120px;margin:0 auto;padding:24px 18px 46px}
+.page{width:210mm;height:297mm;margin:18px auto;background:var(--paper);box-shadow:var(--shadow);position:relative;overflow:hidden;padding:12mm 14mm 11mm}
+.page:before{content:"";position:absolute;top:0;left:0;right:0;height:5mm;background:linear-gradient(90deg,var(--teal),var(--navy) 45%,var(--amber))}
+.page.es:before{background:linear-gradient(90deg,var(--teal),var(--navy),var(--amber))}
+.page.en:before{background:linear-gradient(90deg,var(--wine),var(--navy),#57708f)}
+.page.ro:before{background:linear-gradient(90deg,var(--amber),var(--navy),var(--green))}
+.header{display:grid;grid-template-columns:33mm 1fr 39mm;gap:8mm;align-items:center;margin-top:2mm;padding-bottom:6mm;border-bottom:2px solid var(--line)}
+.photo{width:30mm;height:35mm;object-fit:cover;object-position:center 38%;border:1px solid #cbd7e4;border-radius:9px;background:#fff}
+h1{margin:0;color:var(--navy);font-size:25px;line-height:1.02;text-transform:uppercase;letter-spacing:.2px}
+.role{margin-top:3px;color:var(--teal);font-size:11.5px;text-transform:uppercase;font-weight:900;letter-spacing:.5px}
+.en .role{color:var(--wine)}.ro .role{color:var(--amber)}
+.meta{margin-top:6px;font-size:10px;color:#29384d;font-weight:800}
+.contact{margin-top:4px;color:var(--muted);font-size:9.6px}.inline-link{color:var(--navy);font-weight:800;text-decoration:none}.inline-link:hover{text-decoration:underline}
+.lang-badge{justify-self:end;text-align:center;border:1px solid var(--line);border-radius:10px;min-width:31mm;padding:8px 8px;background:#fff}
+.lang-badge b{display:block;font-size:24px;color:var(--navy)}
+.lang-badge span{display:block;margin-top:3px;text-transform:uppercase;letter-spacing:1.1px;font-size:8px;font-weight:900;color:var(--muted)}
+.links{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.links a,.links .profile-pill{font-size:9px;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:3px 7px;color:var(--navy);font-weight:800;background:#fff;display:inline-flex;align-items:center}.links .profile-pill{color:var(--muted);cursor:default}.links .profile-pill{position:relative}.links .profile-pill:hover::after,.links .profile-pill:focus::after{content:attr(data-private);position:absolute;left:50%;top:-8px;transform:translate(-50%,-100%);background:var(--navy);color:#fff;border-radius:6px;padding:5px 7px;font-size:9px;white-space:nowrap;box-shadow:0 8px 18px rgba(18,55,90,.18);z-index:20}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin:5mm 0}
+.stat{border:1px solid var(--line);border-radius:8px;padding:7px 8px;background:#f9fbfd;text-align:center}
+.stat b{display:block;color:var(--navy);font-size:15px}.stat span{font-size:8.6px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:61mm 1fr;gap:7mm}
+.sidebar{border-right:1px solid var(--line);padding-right:5mm}
+.section{margin-bottom:4.7mm}#profile,#experience,#training{scroll-margin-top:88px}
+h2{margin:0 0 6px;color:var(--navy);border-bottom:1px solid var(--line);padding-bottom:4px;font-size:11.8px;line-height:1.1;text-transform:uppercase;letter-spacing:.7px}
+h3{margin:0;color:var(--navy);font-size:13.2px;line-height:1.12}
+p{margin:0 0 6px}.body{font-size:10.25px}.small{font-size:9.2px;color:var(--muted)}
+.strength{background:var(--soft);border-left:4px solid var(--teal);border-radius:6px;padding:7px 8px;margin-bottom:5px}
+.en .strength{border-left-color:var(--wine)}.ro .strength{border-left-color:var(--amber)}
+.strength b{display:block;color:var(--navy);font-size:9.5px}.strength span{font-size:8.7px;display:block}
+.chips,.tags{display:flex;flex-wrap:wrap;gap:4px}
+.chips span,.tags span{border:1px solid #cbd7e4;border-radius:999px;background:#fff;padding:3px 6px;font-size:8.4px;font-weight:800;color:#29384d}
+.tags{margin:5px 0 6px}.tags span{background:#f7f9fc}
+.exp{margin-bottom:5.2mm}
+.exphead{display:grid;grid-template-columns:1fr auto;gap:6mm;align-items:start;border-bottom:1px solid var(--line);padding-bottom:5px;margin-bottom:5px}
+.company{font-weight:850;color:#29384d;font-size:10.2px}.date{font-size:9.2px;text-align:right;color:var(--muted);white-space:nowrap}
+.place{display:block}.company-row{display:flex;align-items:center;gap:8px;justify-content:space-between}
+.company-logos{display:flex;gap:5px;align-items:center;flex-wrap:wrap;justify-content:flex-end;min-width:75px}
+.logo{height:28px;min-width:58px;max-width:96px;border:1px solid var(--line);border-radius:7px;background:#fff;display:flex;align-items:center;justify-content:center;padding:5px 8px;text-decoration:none;overflow:hidden}
+.logo img{max-height:17px;max-width:78px;display:block;object-fit:contain}.logo.mapfre{min-width:104px;max-width:132px;padding:6px 12px}.logo.mapfre img{max-height:15px;max-width:104px}.logo.eltec{min-width:66px;max-width:108px}.logo.eltec img{max-height:18px;max-width:88px}
+ul{margin:0 0 0 15px;padding:0}.exp li{font-size:9.8px;margin:0 0 3px}
+.quote{background:#fff8ec;border-left:4px solid var(--amber);border-radius:6px;padding:8px 10px;font-size:10px;font-weight:750;color:#26374f}
+.context-list li{font-size:9.7px;margin-bottom:4px}
+.footer{position:absolute;left:14mm;right:14mm;bottom:7mm;border-top:1px solid var(--line);padding-top:4px;display:flex;justify-content:space-between;color:#8190a3;font-size:8px}
+.index-page{min-height:100vh;background:radial-gradient(circle at top left,rgba(15,118,110,.16),transparent 35%),linear-gradient(135deg,#f7fafc,#e8edf3);padding:44px 18px}
+.index-wrap{max-width:1040px;margin:0 auto}.index-hero{display:grid;grid-template-columns:120px 1fr;gap:24px;align-items:center;margin-bottom:28px}
+.index-photo{width:112px;height:132px;object-fit:cover;object-position:center 38%;border-radius:16px;border:1px solid var(--line);box-shadow:var(--shadow);background:white}
+.eyebrow{text-transform:uppercase;letter-spacing:1.4px;color:var(--teal);font-weight:900;font-size:13px}.index-hero h1{font-size:44px}.index-copy{font-size:17px;max-width:780px;color:#46566b}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:24px 0}.card{background:white;border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:var(--shadow)}
+.card b{font-size:30px;color:var(--navy)}.card h2{border:0;padding:0;margin:8px 0;font-size:18px}.card p{color:var(--muted);font-size:14px;min-height:58px}
+.button{display:inline-flex;text-decoration:none;font-weight:900;color:white;background:var(--navy);border-radius:999px;padding:10px 14px;margin-top:8px}
+.profile-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.profile-links a,.profile-links .profile-pill{background:white;border:1px solid var(--line);border-radius:999px;text-decoration:none;padding:10px 14px;font-weight:900;color:var(--navy);display:inline-flex}.profile-links .profile-pill{color:var(--muted);cursor:default}.profile-links .profile-pill{position:relative}.profile-links .profile-pill:hover::after,.profile-links .profile-pill:focus::after{content:attr(data-private);position:absolute;left:50%;top:-10px;transform:translate(-50%,-100%);background:var(--navy);color:#fff;border-radius:8px;padding:6px 8px;font-size:12px;white-space:nowrap;box-shadow:0 8px 18px rgba(18,55,90,.18);z-index:20}
+@media(max-width:900px){.sitebar-inner{align-items:flex-start;flex-direction:column}.shell{padding:0}.page{width:100%;height:auto;min-height:0;margin:0;box-shadow:none;padding:22px 18px 48px}.page:before{height:5px}.header{grid-template-columns:82px 1fr;gap:14px}.lang-badge{grid-column:1 / -1;justify-self:start}.photo{width:78px;height:92px}.grid{grid-template-columns:1fr}.sidebar{border-right:0;padding-right:0}.stats{grid-template-columns:1fr}.exphead{grid-template-columns:1fr}.date{text-align:left}.company-row{align-items:flex-start}.index-hero{grid-template-columns:1fr}.index-hero h1{font-size:34px}.cards{grid-template-columns:1fr}.index-photo{width:96px;height:112px}}
+@media print{body{background:#fff}.sitebar{display:none}.shell{padding:0}.page{margin:0;box-shadow:none;page-break-after:always}.page:last-child{page-break-after:auto}.index-page{display:none}}
+</style>
+</head>
+<body>
+<div class="sitebar"><div class="sitebar-inner"><div class="brand-small">Marius Dambu Dambu</div><nav><a href="index.html">Inicio / Home</a><a href="#profile">Profile</a><a href="#experience">Experience</a><a href="#training">Training</a><a href="carta-presentacion.html">Carta</a></nav></div></div>
+<main class="shell"><section class="page en">
+  <header class="header">
+    <img class="photo" src="assets/FOTO.JPG" alt="Marius Dambu Dambu">
+    <div>
+      <h1>Marius Dambu Dambu</h1>
+      <div class="role">Workplace Support Engineer / EUC & Endpoint Support</div>
+      <div class="meta">Microsoft 365 · Windows 10/11 · Windows Autopilot · Intune · ServiceNow · VIP Support · Smart Hands</div>
+      <div class="contact">Valdemoro, Madrid, Spain · Spanish citizenship · Driving license A and B<br>+34 675 506 700 · mariusdambu@gmail.com · <a class="inline-link" href="https://www.linkedin.com/in/mariusdambu/" target="_blank" rel="noopener noreferrer">linkedin.com/in/mariusdambu</a></div>
+      <div class="links"><a href="https://www.linkedin.com/in/mariusdambu/" target="_blank" rel="noopener noreferrer">LinkedIn</a><span class="profile-pill" role="button" aria-disabled="true" tabindex="0" title="Perfil privado" data-private="Perfil privado">InfoJobs</span></div>
+    </div>
+    <div class="lang-badge"><b>EN</b><span>Full version</span></div>
+  </header>
+  <div class="stats"><div class="stat"><b>18+</b><span>years in IT</span></div><div class="stat"><b>Workplace</b><span>users, VIP and endpoints</span></div><div class="stat"><b>Infra</b><span>data center, storage and Smart Hands</span></div></div>
+  <div class="grid">
+    <aside class="sidebar">
+      <div class="section"><h2>Core strengths</h2><div class="strength"><b>Workplace & endpoint</b><span>Windows 10/11, Microsoft 365, device deployment, onboarding, hardware refresh and VIP support.</span></div><div class="strength"><b>Microsoft operations</b><span>Windows Autopilot, operational Intune support, Entra ID, Active Directory, SCCM/MECM and ServiceNow.</span></div><div class="strength"><b>Enterprise infrastructure</b><span>Data Center, Smart Hands, Quantum, Pure Storage, Dell EMC, Cisco, Riverbed and enterprise hardware.</span></div></div>
+      <div class="section"><h2>Technologies</h2><div class="chips"><span>Microsoft 365</span><span>Windows 10/11</span><span>Windows Autopilot</span><span>Intune</span><span>ServiceNow</span><span>Entra ID</span><span>VIP Support</span><span>Workplace</span><span>EUC</span><span>Endpoint</span><span>Smart Hands</span><span>Quantum</span><span>Pure Storage</span><span>Dell EMC</span><span>Cisco</span><span>Data Center</span><span>SCCM/MECM</span><span>PowerShell</span><span>Jamf</span></div></div>
+      <div class="section"><h2>Languages</h2><p class="body"><b>Romanian</b> — Native<br><b>Spanish</b> — Professional proficiency<br><b>English</b> — Technical working proficiency</p></div>
+    </aside>
+    <main>
+      <div id="profile" class="section"><h2>Professional profile</h2><p class="body"><b>Workplace Support Engineer</b> with more than 18 years of experience in corporate IT support, workplace technologies, Windows deployment and enterprise infrastructure in multinational environments.</p><p class="body">My profile combines user-focused support with practical infrastructure experience: corporate users, VIP profiles, endpoints, Microsoft 365, ServiceNow, data center operations, Smart Hands and enterprise storage and backup platforms.</p><p class="body">I bring value by resolving incidents, coordinating with international technical teams and maintaining service continuity through operational judgement, clear communication and strong user orientation.</p></div>
+      <div id="experience" class="exp">
+        <div class="exphead"><div><div class="company-row"><h3>Desktop Support Engineer / Workplace Support Engineer</h3><div class="company-logos"><a class="logo" href="https://axiomtechnologies.com/" target="_blank" rel="noopener noreferrer" aria-label="AXIOM Technologies official website"><img src="assets/logos/axiom.png" alt="AXIOM Technologies logo"></a><a class="logo" href="https://www.intactinsurance.eu/" target="_blank" rel="noopener noreferrer" aria-label="Intact Insurance official website"><img src="assets/logos/intact.svg" alt="Intact Insurance logo"></a></div></div><div class="company">AXIOM Technologies Spain S.L. · Assigned to Intact Insurance (Europe)</div></div><div class="date">June 2025 – Present<span class="place">Madrid</span></div></div>
+        <div class="tags"><span>Microsoft 365</span><span>Windows 10/11</span><span>VIP Support</span><span>ServiceNow</span><span>Windows Autopilot</span><span>Intune</span></div><ul><li>Workplace support for corporate users and VIP profiles in an international insurance environment.</li><li>Deployment, preparation, replacement and refresh of Windows 10/11 devices.</li><li>Microsoft 365 support and incident/request management through ServiceNow.</li><li>Operational Windows Autopilot and Intune support, with basic administration of groups, devices and access in Entra ID.</li><li>Collaboration with international IT teams in the United Kingdom, Belgium, the Netherlands and France, supporting technical peers across Europe.</li></ul>
+      </div><div class="exp">
+        <div class="exphead"><div><div class="company-row"><h3>Field Engineer & Infrastructure Support</h3><div class="company-logos"><a class="logo eltec" href="https://www.tvsscs.com/spain/" target="_blank" rel="noopener noreferrer" aria-label="Eltec IT Services / TVS SCS official website"><img src="assets/logos/eltec_it_services_logo.jpeg" alt="Eltec IT Services / TVS SCS logo"></a></div></div><div class="company">Eltec IT Services / TVS SCS</div></div><div class="date">2020 – June 2025<span class="place">Madrid</span></div></div>
+        <div class="tags"><span>Smart Hands</span><span>Quantum</span><span>Pure Storage</span><span>Dell EMC</span><span>Cisco</span><span>Data Center</span></div><ul><li>Field engineering and enterprise infrastructure support for multinational customers and critical environments.</li><li>Smart Hands, rack and stack, hardware break/fix, component replacement and vendor coordination.</li><li>Support for Quantum Scalar, DXi and StorNext; Pure Storage FlashArray and FlashBlade; Dell EMC Unity, VNX, VMAX and PowerMax.</li><li>Assistance with Cisco and Riverbed infrastructure and data center operations.</li></ul>
+      </div>
+    </main>
+  </div>
+  <div class="footer"><span>Marius Dambu Dambu · CV trilingüe / trilingual / trilingv</span><span>English 1 / 2</span></div>
+</section><section class="page en">
+  <header class="header">
+    <img class="photo" src="assets/FOTO.JPG" alt="Marius Dambu Dambu">
+    <div>
+      <h1>Marius Dambu Dambu</h1>
+      <div class="role">Previous experience, education and objective</div>
+      <div class="contact">Valdemoro, Madrid · mariusdambu@gmail.com · <a class="inline-link" href="https://www.linkedin.com/in/mariusdambu/" target="_blank" rel="noopener noreferrer">linkedin.com/in/mariusdambu</a></div>
+      <div class="links"><a href="https://www.linkedin.com/in/mariusdambu/" target="_blank" rel="noopener noreferrer">LinkedIn</a><span class="profile-pill" role="button" aria-disabled="true" tabindex="0" title="Perfil privado" data-private="Perfil privado">InfoJobs</span></div>
+    </div>
+    <div class="lang-badge"><b>EN</b><span>Continued</span></div>
+  </header>
+  <div class="grid" style="margin-top:7mm">
+    <aside class="sidebar">
+      <div id="training" class="section"><h2>Education</h2><p class="body"><b>High School Diploma</b><br>Liceul Agricol Tulcea, now Liceul Tehnologic Agricol "Nicolae Cornățeanu" Tulcea, Romania<br>1997–2001</p></div>
+      <div class="section"><h2>Certifications</h2><p class="body"><b>Microsoft:</b> MCSA, Windows Server, Active Directory, Network Infrastructure, ISA Server.</p><p class="body"><b>Security / Endpoint:</b> Fortinet NSE 1 and 2, Jamf Certified Associate.</p><p class="body"><b>Networking:</b> Riverbed RCPE.</p></div>
+      <div class="section"><h2>Vendor training</h2><p class="body"><b>Quantum:</b> Scalar, DXi Series, StorNext, Lattus.</p><p class="body"><b>Pure Storage:</b> FlashArray, FlashBlade, DirectFlash.</p><p class="body"><b>Dell EMC:</b> Unity, Unity XT, VNX, VMAX and PowerMax.</p></div>
+      <div class="section"><h2>Technologies</h2><div class="chips"><span>Microsoft 365</span><span>Windows 10/11</span><span>Windows Autopilot</span><span>Intune</span><span>ServiceNow</span><span>Entra ID</span><span>VIP Support</span><span>Workplace</span><span>EUC</span><span>Endpoint</span><span>Smart Hands</span><span>Quantum</span><span>Pure Storage</span><span>Dell EMC</span><span>Cisco</span></div></div>
+    </aside>
+    <main>
+      <div class="section"><h2>Previous experience</h2>
+      <div class="exp">
+        <div class="exphead"><div><div class="company-row"><h3>Desktop & Remote Support Engineer</h3><div class="company-logos"><a class="logo eltec" href="https://www.tvsscs.com/spain/" target="_blank" rel="noopener noreferrer" aria-label="Eltec IT Services / TVS SCS official website"><img src="assets/logos/eltec_it_services_logo.jpeg" alt="Eltec IT Services / TVS SCS logo"></a><a class="logo mapfre" href="https://www.mapfre.es/" target="_blank" rel="noopener noreferrer" aria-label="MAPFRE official website"><img src="assets/logos/mapfre.svg" alt="MAPFRE logo"></a></div></div><div class="company">Eltec IT Services / TVS SCS · Mapfre and enterprise customers</div></div><div class="date">August 2009 – 2020</div></div>
+        <ul><li>Desktop, remote and onsite support for corporate users in enterprise environments.</li><li>Troubleshooting of Microsoft Windows, corporate applications, hardware and peripherals.</li><li>Active Directory administration and support for the user lifecycle.</li><li>Endpoint deployment, workplace support, service requests and technical escalations.</li></ul>
+      </div><div class="exp">
+        <div class="exphead"><div><div class="company-row"><h3>Onsite IT Technician</h3><div class="company-logos"><a class="logo mapfre" href="https://www.mapfre.es/" target="_blank" rel="noopener noreferrer" aria-label="MAPFRE official website"><img src="assets/logos/mapfre.svg" alt="MAPFRE logo"></a></div></div><div class="company">MC Memory Call S.L. · Assigned to Mapfre</div></div><div class="date">Dec. 2007 – Aug. 2009</div></div>
+        <ul><li>Onsite support for Mapfre users, covering hardware and software incidents.</li><li>User and workstation management through Active Directory.</li><li>Local assistance and Smart Hands support in data center environments.</li></ul>
+      </div><div class="exp">
+        <div class="exphead"><div><div class="company-row"><h3>Support Technician & Inventory Manager</h3></div><div class="company">PC City Spain S.A.U.</div></div><div class="date">Mar. 2007 – Dec. 2007</div></div>
+        <ul><li>Diagnosis and repair of IT equipment, defective product inventory management, returned hardware quality control and basic technical support.</li></ul>
+      </div></div>
+      <div class="section"><h2>Technical operating context</h2><ul class="context-list"><li>Support for VIP users and corporate users in multinational environments.</li><li>Incident, request and escalation handling with coordination across international technical teams.</li><li>Experience with hardware refresh, Windows deployment, endpoint support and ITSM tool operation.</li><li>Practical background in enterprise infrastructure, data center operations, storage, backup and Smart Hands support.</li></ul></div>
+      <div class="section"><h2>Career objective</h2><div class="quote">Continue growing in Workplace Support Engineer, Desktop Support Engineer, Workplace Technology Specialist or EUC / Endpoint Support roles, combining user support, endpoint services and infrastructure experience.</div></div>
+    </main>
+  </div>
+  <div class="footer"><span>Marius Dambu Dambu · CV trilingüe / trilingual / trilingv</span><span>English 2 / 2</span></div>
+</section></main>
+<script>
+document.querySelectorAll('.sitebar a[href^="#"]').forEach(link => {
+  link.addEventListener('click', event => {
+    const target = document.querySelector(link.getAttribute('href'));
+    if (!target) return;
+    event.preventDefault();
+    const bar = document.querySelector('.sitebar');
+    const offset = (bar ? bar.getBoundingClientRect().height : 0) + 18;
+    const top = target.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({ top, behavior: 'smooth' });
+    history.replaceState(null, '', link.getAttribute('href'));
+  });
+});
+</script>
+</body>
+</html>
