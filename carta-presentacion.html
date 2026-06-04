@@ -15,7 +15,7 @@ a{color:inherit}
 .brand-small{font-weight:900;color:var(--navy);letter-spacing:.3px;text-transform:uppercase}
 .sitebar nav{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
 .sitebar a{font-size:13px;font-weight:800;text-decoration:none;border:1px solid var(--line);padding:7px 10px;border-radius:9px;background:#fff}
-.sitebar a:hover{border-color:var(--navy)}
+.sitebar a:hover{border-color:var(--navy)}.sitebar button.print-button{font-size:13px;font-weight:800;border:1px solid var(--line);padding:7px 10px;border-radius:9px;background:#fff;color:var(--navy);cursor:pointer}.sitebar button.print-button:hover{border-color:var(--navy)}
 .shell{max-width:1120px;margin:0 auto;padding:24px 18px 46px}
 .page{width:210mm;height:297mm;margin:18px auto;background:var(--paper);box-shadow:var(--shadow);position:relative;overflow:hidden;padding:12mm 14mm 11mm}
 .page:before{content:"";position:absolute;top:0;left:0;right:0;height:5mm;background:linear-gradient(90deg,var(--teal),var(--navy) 45%,var(--amber))}
@@ -69,7 +69,7 @@ ul{margin:0 0 0 15px;padding:0}.exp li{font-size:9.8px;margin:0 0 3px}
 .button{display:inline-flex;text-decoration:none;font-weight:900;color:white;background:var(--navy);border-radius:999px;padding:10px 14px;margin-top:8px}
 .profile-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.profile-links a,.profile-links .profile-pill{background:white;border:1px solid var(--line);border-radius:999px;text-decoration:none;padding:10px 14px;font-weight:900;color:var(--navy);display:inline-flex}.profile-links .profile-pill{color:var(--muted);cursor:default}.profile-links .profile-pill{position:relative}.profile-links .profile-pill:hover::after,.profile-links .profile-pill:focus::after{content:attr(data-private);position:absolute;left:50%;top:-10px;transform:translate(-50%,-100%);background:var(--navy);color:#fff;border-radius:8px;padding:6px 8px;font-size:12px;white-space:nowrap;box-shadow:0 8px 18px rgba(18,55,90,.18);z-index:20}
 @media(max-width:900px){.sitebar-inner{align-items:flex-start;flex-direction:column}.shell{padding:0}.page{width:100%;height:auto;min-height:0;margin:0;box-shadow:none;padding:22px 18px 48px}.page:before{height:5px}.header{grid-template-columns:82px 1fr;gap:14px}.lang-badge{grid-column:1 / -1;justify-self:start}.photo{width:78px;height:92px}.grid{grid-template-columns:1fr}.sidebar{border-right:0;padding-right:0}.stats{grid-template-columns:1fr}.exphead{grid-template-columns:1fr}.date{text-align:left}.company-row{align-items:flex-start}.index-hero{grid-template-columns:1fr}.index-hero h1{font-size:34px}.cards{grid-template-columns:1fr}.index-photo{width:96px;height:112px}}
-@media print{body{background:#fff}.sitebar{display:none}.shell{padding:0}.page{margin:0;box-shadow:none;page-break-after:always}.page:last-child{page-break-after:auto}.index-page{display:none}}
+@media print{@page{size:A4;margin:10mm}html,body{background:#fff!important;margin:0!important;padding:0!important}.sitebar,.print-button,.profile-links,.links{display:none!important}.shell{max-width:none!important;padding:0!important;margin:0!important}.page{width:auto!important;height:auto!important;min-height:0!important;margin:0!important;padding:0!important;box-shadow:none!important;overflow:visible!important;page-break-after:auto!important;break-after:auto!important}.page:before{display:none!important}.header{margin-top:0!important;padding-bottom:5mm!important}.stats{margin:5mm 0!important}.footer{position:static!important;margin-top:7mm!important;padding-top:3mm!important}.index-page{display:none!important}.exp,.exphead,.section,.strength,.stat,.quote,.letter-chip,.letter-header{break-inside:avoid!important;page-break-inside:avoid!important}h1,h2,h3{break-after:avoid!important;page-break-after:avoid!important}ul,p{orphans:3;widows:3}.letter-page{background:#fff!important;padding:0!important}.letter-wrap{max-width:none!important;margin:0!important}.letter-sheet{border:0!important;border-radius:0!important;box-shadow:none!important;overflow:visible!important}.letter-top{display:none!important}.letter-inner{padding:0!important}.letter-body{gap:9mm!important}.letter-main p{font-size:12.5px!important;line-height:1.45!important}.letter-list{break-inside:avoid!important}.letter-actions{display:none!important}}
 
 .letter-page{min-height:100vh;background:radial-gradient(circle at top left,rgba(15,118,110,.14),transparent 36%),linear-gradient(135deg,#f7fafc,#e8edf3);padding:28px 18px 56px}
 .letter-wrap{max-width:960px;margin:0 auto}
@@ -99,7 +99,7 @@ ul{margin:0 0 0 15px;padding:0}.exp li{font-size:9.8px;margin:0 0 3px}
 </style>
 </head>
 <body>
-<div class="sitebar"><div class="sitebar-inner"><div class="brand-small">Marius Dambu Dambu</div><nav><a href="index.html">Inicio / Home</a><a href="es.html">CV Español</a><a href="en.html">CV English</a><a href="ro.html">CV Română</a></nav></div></div>
+<div class="sitebar"><div class="sitebar-inner"><div class="brand-small">Marius Dambu Dambu</div><nav><a href="index.html">Inicio</a><a href="es.html">CV Español</a><a href="en.html">CV Inglés</a><a href="ro.html">CV Rumano</a><button class="print-button" type="button" onclick="window.print()">Imprimir</button></nav></div></div>
 <main class="letter-page">
   <div class="letter-wrap">
     <article class="letter-sheet">
@@ -123,13 +123,13 @@ ul{margin:0 0 0 15px;padding:0}.exp li{font-size:9.8px;margin:0 0 3px}
             <h2>Áreas clave</h2>
             <p>Microsoft 365<br>Windows 10/11<br>Windows Autopilot<br>SCCM / MECM<br>Hardware & Software Support<br>IT Support Technician<br>Endpoint Support</p>
             <h2>Disponibilidad</h2>
-            <p>Candidaturas de soporte IT en España y Europa, especialmente entornos corporativos, internacionales y de servicios gestionados.</p>
+            <p>Candidaturas de soporte de IT en España y Europa, especialmente entornos corporativos, internacionales y de servicios gestionados.</p>
           </aside>
 
           <section class="letter-main">
             <h2>Carta de presentación</h2>
             <p class="lead">Estimado/a responsable de selección:</p>
-            <p>Me gustaría presentar mi candidatura para posiciones relacionadas con soporte IT corporativo, Desktop Support, Microsoft 365 Support y gestión de endpoints Windows. Cuento con una trayectoria sólida en soporte técnico a usuarios, resolución de incidencias, despliegue de equipos y operación diaria de entornos de puesto de trabajo en organizaciones empresariales.</p>
+            <p>Me gustaría presentar mi candidatura para posiciones relacionadas con soporte de IT corporativo, Desktop Support, Microsoft 365 Support y gestión de endpoints Windows. Cuento con una trayectoria sólida en soporte técnico a usuarios, resolución de incidencias, despliegue de equipos y operación diaria de entornos de puesto de trabajo en organizaciones empresariales.</p>
             <p>Durante mi experiencia profesional he trabajado en entornos donde la continuidad del servicio, la atención al usuario y la precisión técnica son esenciales. He dado soporte a usuarios corporativos y perfiles VIP, gestionando incidencias de hardware y software, equipos Windows 10/11, Microsoft 365, herramientas ITSM, Active Directory, soporte operativo de Intune y procesos relacionados con Windows Autopilot y SCCM/MECM.</p>
             <p>Mi perfil combina cercanía al usuario con una base técnica práctica. Además del soporte workplace y endpoint, he participado en tareas de despliegue, renovación de equipos, diagnóstico de fallos, coordinación con equipos técnicos internacionales y soporte Smart Hands en infraestructuras empresariales. Esta combinación me permite entender tanto la necesidad del usuario final como el contexto operativo de los equipos IT.</p>
 
@@ -140,7 +140,7 @@ ul{margin:0 0 0 15px;padding:0}.exp li{font-size:9.8px;margin:0 0 3px}
               <div class="letter-chip">Usuarios corporativos y soporte VIP</div>
             </div>
 
-            <p>Me considero una persona resolutiva, responsable y orientada al servicio. Valoro la comunicación clara, la documentación ordenada y la colaboración con equipos locales e internacionales. Busco seguir desarrollándome en roles de soporte IT, Desktop Support Engineer, Workplace Support Engineer o Endpoint Support, aportando experiencia real, criterio técnico y compromiso con la calidad del servicio.</p>
+            <p>Me considero una persona resolutiva, responsable y orientada al servicio. Valoro la comunicación clara, la documentación ordenada y la colaboración con equipos locales e internacionales. Busco seguir desarrollándome en roles de soporte de IT, Desktop Support Engineer, Workplace Support Engineer o Endpoint Support, aportando experiencia real, criterio técnico y compromiso con la calidad del servicio.</p>
             <p>Quedo a su disposición para ampliar cualquier información sobre mi experiencia y comentar cómo puedo contribuir a las necesidades de su equipo IT.</p>
 
             <div class="signature">
